@@ -1,0 +1,157 @@
+:root {
+    --background-color: #4a4a4a;
+    --form-background: #2e2e2e;
+    --text-color: #333333;
+    --input-background: #767676;
+    --input-border: #a5a5a5;
+    --button-color: #ff0000;
+    --button-hover: #cc0000;
+    --link-color: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-form, .image-editor {
+    background-color: var(--form-background);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--button-color);
+}
+
+p {
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-back {
+    background-color: #a5a5a5;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-continue {
+    background-color: var(--button-color);
+    color: #ffffff;
+}
+
+.btn-back:hover {
+    background-color: #d0d0d0;
+}
+
+.btn-continue:hover {
+    background-color: var(--button-hover);
+}
+
+.image-container {
+    max-width: 100%;
+    /* height: 242px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#editableImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.edit-controls {
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .login-form, .image-editor {
+        padding: 20px;
+    }
+}
+
+.Nagad{
+    background: #4a4a4a;
+}
+.Bkash{
+    background-color: #4a4a4a;
+}
